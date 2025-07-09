@@ -1,10 +1,20 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="Capitu.UI.App"
-             RequestedThemeVariant="Default">
+             RequestedThemeVariant="Dark">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
     <Application.Styles>
-        <FluentTheme />
+        <FluentTheme.Palettes>
+            <ColorPaletteResources x:Key="Light"
+                                   Accent="#367588"
+                                   RegionColor="#FAFAFA"
+                                   ErrorText="#D32F2F" />
+
+            <ColorPaletteResources x:Key="Dark"
+                                   Accent="#4FC3F7"
+                                   RegionColor="#1E1E1E"
+                                   ErrorText="#FF6F61" />
+        </FluentTheme.Palettes>
     </Application.Styles>
 </Application>

@@ -4,6 +4,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Capitu.UI.MainWindow"
-        Title="Capitu.UI">
-        Conheça Capitu!
+        Title="Capitu">
+    <StackPanel>
+
+        <Grid Background="#367588"
+                   Height="100">
+            <Button Margin="10">Github</Button>
+            <TextBlock HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="25"
+                   Foreground="White">
+                CAPITU
+                </TextBlock>
+            
+        </Grid>
+        <Grid Margin="20" 
+              ColumnDefinitions="Auto,Auto" 
+              RowDefinitions="Auto, Auto, 30"
+              ColumnSpacing="200"
+              HorizontalAlignment="Center">
+            <TextBlock Grid.Row="0" 
+                       Grid.Column="0">
+                Bem vindo ao diagramador Capitu!
+            </TextBlock>
+            <TextBlock Grid.Row="1" 
+                       Grid.Column="0">
+                Para mais informações, cheque o Github
+            </TextBlock>
+            <Button Grid.Row="1" 
+                    Grid.Column="1" 
+                    CornerRadius="70"
+                    Padding="20"
+                    Foreground="White"
+                    Background="#367588"
+                    x:Name="LoadFileBtn"
+                    Content="Carregar Arquivo"/>
+            <Label Grid.Row="2" 
+                   Grid.Column="1" 
+                   VerticalAlignment="Bottom" 
+                   HorizontalAlignment="Center"
+                   Target="LoadFileBtn"
+                   Content="pdf, txt, docx"/>
+        </Grid>
+    </StackPanel>
 </Window>
