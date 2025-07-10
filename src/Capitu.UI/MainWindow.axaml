@@ -7,17 +7,25 @@
         Title="Capitu">
     <StackPanel>
 
-        <Grid Background="#367588"
-                   Height="100">
-            <Button Margin="10">Github</Button>
+        <DockPanel Background="#367588"
+                   Height="70">
+            <HyperlinkButton NavigateUri="https://github.com/CaioMtho/Capitu" 
+                             ToolTip.Tip="Abrir repositório"
+                             Background="Transparent"
+                             BorderBrush="Transparent">
+                <Image Source="avares://Capitu.UI/assets/github-mark-white.png"
+                       Width="25"
+                       Height="25" 
+                       Margin="5"/>
+            </HyperlinkButton>
             <TextBlock HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   FontSize="25"
-                   Foreground="White">
+                       VerticalAlignment="Center"
+                       FontSize="25"
+                       Foreground="White">
                 CAPITU
                 </TextBlock>
             
-        </Grid>
+        </DockPanel>
         <Grid Margin="20" 
               ColumnDefinitions="Auto,Auto" 
               RowDefinitions="Auto, Auto, 30"
