@@ -3,18 +3,5 @@
              x:Class="Capitu.UI.App"
              RequestedThemeVariant="Dark">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
-
-    <Application.Styles>
-        <FluentTheme.Palettes>
-            <ColorPaletteResources x:Key="Light"
-                                   Accent="#367588"
-                                   RegionColor="#FAFAFA"
-                                   ErrorText="#D32F2F" />
-
-            <ColorPaletteResources x:Key="Dark"
-                                   Accent="#4FC3F7"
-                                   RegionColor="#1E1E1E"
-                                   ErrorText="#FF6F61" />
-        </FluentTheme.Palettes>
-    </Application.Styles>
+             
 </Application>
